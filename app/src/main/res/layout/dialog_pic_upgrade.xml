@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/oval_watchbg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/watchName"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/font18" />
+
+    <LinearLayout
+        android:id="@+id/llyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:layout_centerHorizontal="true"
+            android:text="@string/SizedownLoad"
+            android:textColor="@color/litterGray"
+            android:textSize="@dimen/font12" />
+
+        <TextView
+            android:id="@+id/txtDownNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:layout_marginStart="10dp"
+            android:text="@string/NumdownLoad"
+            android:textColor="@color/litterGray"
+            android:textSize="@dimen/font12" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/llyout"
+        android:layout_marginTop="10dp"
+        android:background="@color/lineColor"></View>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivPic"
+        android:layout_width="@dimen/picHwSize"
+        android:layout_height="@dimen/picHwSize"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/syncWatchHeight"
+        android:layout_below="@id/ivPic"
+        android:layout_marginTop="40dp"
+
+
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="100"
+            android:progressDrawable="@drawable/watch_progressbar_bg"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtSync"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/syncWathch"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font16" />
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--字体选中时-->
+    <item android:state_pressed="true" android:color="#dd000000"
+	android:state_enabled="true"/>
+    <item android:state_pressed="false" android:color="#dd000000"
+	android:state_enabled="true"/>
+	
+    <item android:color="#858585"
+	android:state_enabled="false"/>
+
+</selector>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/body_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="@dimen/dialog_margin_topBottom"
+            android:layout_marginEnd="7dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dialog_margin_topBottom"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@drawable/body_dialog_confirm_bg"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_1" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="@dimen/line_height"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/gray_line" />
+
+            <Button
+                android:id="@+id/confirm"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@drawable/body_dialog_confirm_bg"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/setting_bg_color"
+                android:textSize="@dimen/text_size_1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

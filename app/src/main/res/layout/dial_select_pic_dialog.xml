@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_line"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dialog_margin_topBottom"
+        android:background="@drawable/body_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+
+            android:layout_marginTop="15dp"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80.2dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_other_setting_item"
+                android:gravity="center"
+                android:text="@string/YC_takepicture"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/albumon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_top_fillet_bg"
+                android:gravity="center"
+                android:text="@string/YC_Dolen_photo_album"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/gray_line" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_margin="@dimen/back_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/fillet_button_light_green_selector"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/setting_bg_color"
+                android:textSize="@dimen/text_size_1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" >
+        <shape>
+            <corners android:bottomLeftRadius="@dimen/watchRadiu"
+                android:bottomRightRadius="@dimen/watchRadiu"/>
+            <gradient
+                android:angle="0"
+                android:endColor="@color/progressbag"
+                android:startColor="@color/progressbag" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:bottomLeftRadius="@dimen/watchRadiu"
+                    android:bottomRightRadius="@dimen/watchRadiu"/>
+                <gradient
+                    android:angle="0"
+                    android:endColor="@color/main"
+                    android:startColor="@color/main" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

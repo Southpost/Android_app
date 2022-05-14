@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="bracelet_interface_text">
+        <item>@string/bracelet_interface_bp</item>
+        <item>@string/bracelet_interface_heart_rate</item>
+        <item>@string/bracelet_interface_blood_oxygen</item>
+        <item>@string/bracelet_interface_calories</item>
+        <item>@string/bracelet_interface_distance</item>
+        <item>@string/bracelet_interface_weather</item>
+        <item>@string/bracelet_interface_sms</item>
+        <item>@string/bracelet_interface_features</item>
+
+        <item>@string/bracelet_interface_Step_count</item>
+        <item>@string/bracelet_interface_skipping</item>
+        <item>@string/bracelet_interface_swim</item>
+        <item>@string/bracelet_interface_riding</item>
+        <item>@string/bracelet_interface_pingpong</item>
+        <item>@string/bracelet_interface_badminton</item>
+        <item>@string/bracelet_interface_tennis</item>
+        <item>@string/bracelet_interface_run</item>
+
+        <item>@string/bracelet_interface_gps</item>
+        <item>@string/bracelet_interface_device_information</item>
+        <item>@string/bracelet_interface_find_phone</item>
+        <item>@string/bracelet_interface_donot_disturb</item>
+        <item>@string/bracelet_interface_shut_down</item>
+        <item>@string/bracelet_interface_restore_settings</item>
+        <item>@string/bracelet_interface_ECG</item>
+        <item>@string/bracelet_interface_blood_sugar</item>
+
+        <item>@string/bracelet_interface_hiking</item>
+        <item>@string/bracelet_interface_basketball</item>
+        <item>@string/bracelet_interface_football</item>
+        <item>@string/bracelet_interface_baseball</item>
+        <item>@string/bracelet_interface_volleyball</item>
+        <item>@string/bracelet_interface_cricket</item>
+        <item>@string/bracelet_interface_rugby</item>
+        <item>@string/bracelet_interface_dancing</item>
+
+        <item>@string/bracelet_interface_mountaineering</item>
+        <item>@string/bracelet_interface_spinning_bike</item>
+        <item>@string/bracelet_interface_yoga</item>
+        <item>@string/bracelet_interface_sit_ups</item>
+        <item>@string/bracelet_interface_treadmill</item>
+        <item>@string/bracelet_interface_gymnastics</item>
+        <item>@string/bracelet_interface_boating</item>
+        <item>@string/bracelet_interface_jumping_jack</item>
+
+        <item>@string/bracelet_interface_stopwatch</item>
+        <item>@string/bracelet_interface_body_fat</item>
+        <item>@string/bracelet_interface_hockey</item>
+        <!--暂时补全8个，避免ble出错导致应用奔溃。后面ble补充其他界面时，再对应修改-->
+        <item>@string/bracelet_interface_body_fat</item>
+        <item>@string/bracelet_interface_body_fat</item>
+        <item>@string/bracelet_interface_body_fat</item>
+        <item>@string/bracelet_interface_body_fat</item>
+        <item>@string/bracelet_interface_body_fat</item>
+
+    </string-array>
+
+    <integer-array name="fontColorList">
+        <item>@color/dialFontColor0</item>
+        <item>@color/dialFontColor1</item>
+        <item>@color/dialFontColor2</item>
+        <item>@color/dialFontColor3</item>
+        <item>@color/dialFontColor4</item>
+        <item>@color/dialFontColor5</item>
+        <item>@color/dialFontColor6</item>
+        <item>@color/dialFontColor7</item>
+        <item>@color/dialFontColor8</item>
+        <item>@color/dialFontColor9</item>
+        <item>@color/dialFontColor10</item>
+        <item>@color/dialFontColor11</item>
+    </integer-array>
+
+    <integer-array name="colorPickerList">
+        <item>@color/color_picker0</item>
+        <item>@color/color_picker1</item>
+        <item>@color/color_picker2</item>
+        <item>@color/color_picker3</item>
+        <item>@color/color_picker4</item>
+        <item>@color/color_picker5</item>
+        <item>@color/color_picker6</item>
+        <item>@color/color_picker7</item>
+        <item>@color/color_picker8</item>
+        <item>@color/color_picker9</item>
+
+        <item>@color/color_picker10</item>
+        <item>@color/color_picker11</item>
+        <item>@color/color_picker12</item>
+        <item>@color/color_picker13</item>
+        <item>@color/color_picker14</item>
+        <item>@color/color_picker15</item>
+        <item>@color/color_picker16</item>
+        <item>@color/color_picker17</item>
+        <item>@color/color_picker18</item>
+        <item>@color/color_picker19</item>
+
+        <item>@color/color_picker20</item>
+        <item>@color/color_picker21</item>
+        <item>@color/color_picker22</item>
+        <item>@color/color_picker23</item>
+        <item>@color/color_picker24</item>
+        <item>@color/color_picker25</item>
+        <item>@color/color_picker26</item>
+        <item>@color/color_picker27</item>
+        <item>@color/color_picker28</item>
+        <item>@color/color_picker29</item>
+
+        <item>@color/color_picker30</item>
+        <item>@color/color_picker31</item>
+        <item>@color/color_picker32</item>
+        <item>@color/color_picker33</item>
+        <item>@color/color_picker34</item>
+        <item>@color/color_picker35</item>
+        <item>@color/color_picker36</item>
+        <item>@color/color_picker37</item>
+        <item>@color/color_picker38</item>
+        <item>@color/color_picker39</item>
+
+        <item>@color/color_picker40</item>
+        <item>@color/color_picker41</item>
+        <item>@color/color_picker42</item>
+        <item>@color/color_picker43</item>
+        <item>@color/color_picker44</item>
+        <item>@color/color_picker45</item>
+        <item>@color/color_picker46</item>
+        <item>@color/color_picker47</item>
+        <item>@color/color_picker48</item>
+        <item>@color/color_picker49</item>
+
+        <item>@color/color_picker50</item>
+        <item>@color/color_picker51</item>
+        <item>@color/color_picker52</item>
+        <item>@color/color_picker53</item>
+        <item>@color/color_picker54</item>
+        <item>@color/color_picker55</item>
+        <item>@color/color_picker56</item>
+        <item>@color/color_picker57</item>
+        <item>@color/color_picker58</item>
+        <item>@color/color_picker59</item>
+
+        <item>@color/color_picker60</item>
+        <item>@color/color_picker61</item>
+        <item>@color/color_picker62</item>
+        <item>@color/color_picker63</item>
+        <item>@color/color_picker64</item>
+        <item>@color/color_picker65</item>
+        <item>@color/color_picker66</item>
+        <item>@color/color_picker67</item>
+        <item>@color/color_picker68</item>
+        <item>@color/color_picker69</item>
+
+        <item>@color/color_picker70</item>
+        <item>@color/color_picker71</item>
+        <item>@color/color_picker72</item>
+        <item>@color/color_picker73</item>
+        <item>@color/color_picker74</item>
+        <item>@color/color_picker75</item>
+        <item>@color/color_picker76</item>
+        <item>@color/color_picker77</item>
+        <item>@color/color_picker78</item>
+        <item>@color/color_picker79</item>
+
+        <item>@color/color_picker80</item>
+        <item>@color/color_picker81</item>
+        <item>@color/color_picker82</item>
+        <item>@color/color_picker83</item>
+        <item>@color/color_picker84</item>
+        <item>@color/color_picker85</item>
+        <item>@color/color_picker86</item>
+        <item>@color/color_picker87</item>
+        <item>@color/color_picker88</item>
+        <item>@color/color_picker89</item>
+
+        <item>@color/color_picker90</item>
+        <item>@color/color_picker91</item>
+        <item>@color/color_picker92</item>
+        <item>@color/color_picker93</item>
+        <item>@color/color_picker94</item>
+        <item>@color/color_picker95</item>
+        <item>@color/color_picker96</item>
+        <item>@color/color_picker97</item>
+        <item>@color/color_picker98</item>
+        <item>@color/color_picker99</item>
+
+        <item>@color/color_picker100</item>
+        <item>@color/color_picker101</item>
+        <item>@color/color_picker102</item>
+        <item>@color/color_picker103</item>
+        <item>@color/color_picker104</item>
+        <item>@color/color_picker105</item>
+        <item>@color/color_picker106</item>
+        <item>@color/color_picker107</item>
+        <item>@color/color_picker108</item>
+        <item>@color/color_picker109</item>
+
+        <item>@color/color_picker110</item>
+        <item>@color/color_picker111</item>
+        <item>@color/color_picker112</item>
+        <item>@color/color_picker113</item>
+        <item>@color/color_picker114</item>
+        <item>@color/color_picker115</item>
+        <item>@color/color_picker116</item>
+
+    </integer-array>
+</resources>
