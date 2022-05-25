@@ -19,6 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+//设置页面的顶部和底部
 public class TabActivity extends AppCompatActivity {
     @BindView(R.id.vp_home)
     ViewPager vpHome;

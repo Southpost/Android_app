@@ -28,6 +28,8 @@ import butterknife.OnClick;
  * author: lei
  * date: 2022/3/10
  **/
+
+//蓝牙个人信息展示
 public class MineFragment extends BaseFragment {
 
     @BindView(R.id.tv_name)

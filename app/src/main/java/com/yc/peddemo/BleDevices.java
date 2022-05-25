@@ -3,7 +3,7 @@ package com.yc.peddemo;
 public class BleDevices implements Comparable<BleDevices>{
 	private String name;
 	private String address;
-	private int rssi;
+	private int rssi;  //指信号强度
 
 	public BleDevices() {
 	}

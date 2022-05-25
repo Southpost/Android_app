@@ -36,7 +36,7 @@ import com.yc.pedometer.utils.SPUtil;
 import rx.functions.Action1;
 
 /**
- * 用于扫描和显示可用蓝牙 LE 设备的Activity。
+ * 用于扫描和显示可用蓝牙设备的Activity。
  */
 public class DeviceScanActivity extends AppCompatActivity implements
 		DeviceScanInterfacer,AdapterView.OnItemClickListener {
@@ -46,7 +46,7 @@ public class DeviceScanActivity extends AppCompatActivity implements
 	private Handler mHandler;
 
 	private final int REQUEST_ENABLE_BT = 1;
-	//10秒后停止扫描
+	//设置蓝牙扫描所需的时间：10秒后停止扫描
 	private final long SCAN_PERIOD = 10000;
 	private BLEServiceOperate mBLEServiceOperate;
 

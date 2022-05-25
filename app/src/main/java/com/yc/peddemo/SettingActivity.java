@@ -24,11 +24,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+//个人信息的设置
 public class SettingActivity extends AppCompatActivity {
 
-    @BindView(R.id.wheelview)
+    @BindView(R.id.wheelview)  //总体信息修改页
     WheelView wheelView;
-    @BindView(R.id.et_content)
+    @BindView(R.id.et_content)  //修改提示
     EditText etContent;
     private String type;
     private String planIndex;
@@ -97,7 +98,6 @@ public class SettingActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_save)
     public void onClick(View view) {
-
         String contentText = etContent.getText().toString();
         if (contentText.isEmpty() && !"plan".equals(type)) {
             Toast.makeText(this, "请输入内容...", Toast.LENGTH_SHORT).show();

@@ -63,21 +63,23 @@ import butterknife.OnClick;
  * author: lei
  * date: 2022/3/10
  **/
+
+//首页相关信息展示：这里的显示页面在fragment_home.xml中进行映射
 public class HomeFragment extends BaseFragment {
     @BindView(R.id.chart_heart_rate)
-    LineChart heartRateChart;
+    LineChart heartRateChart; //映射xml中的心率值
     @BindView(R.id.chart_oxygen)
-    LineChart chartOxygen;
+    LineChart chartOxygen;  //血氧值
     @BindView(R.id.chart_blood_pressure)
-    LineChart chartBloodPressure;
+    LineChart chartBloodPressure;  //血压值
     @BindView(R.id.chart_temperature)
-    LineChart chartTemperature;
+    LineChart chartTemperature;  //体温值
     @BindView(R.id.tv_total_step)
-    TextView tvTotalStep;
+    TextView tvTotalStep;  //步数统计
     @BindView(R.id.tv_plan_percent)
-    TextView tvPlanPercent;
+    TextView tvPlanPercent;   //计划百分比计算
     @BindView(R.id.tv_step_info)
-    TextView tvStepInfo;
+    TextView tvStepInfo;  //卡路里的消耗
     @BindView(R.id.tv_sleep_info)
     TextView tvSleepInfo;
     private View view;
@@ -99,6 +101,7 @@ public class HomeFragment extends BaseFragment {
         return view;
     }
 
+    //步数统计获取
     public void initTodayStepData(int step, float calories, float Distance) {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("config", Context.MODE_PRIVATE);
         String step_plan = sharedPreferences.getString("step_plan", 8000 + "");
@@ -257,8 +260,9 @@ public class HomeFragment extends BaseFragment {
 
 
     private void initLineChar() {
+        //默认描述
         Description desc = new Description();
-        desc.setText("心率");
+        desc.setText("心率"); //描述文字
         heartRateChart.setNoDataText("暂无数据");
         //得到X轴
         XAxis xAxis = heartRateChart.getXAxis();
@@ -392,7 +396,7 @@ public class HomeFragment extends BaseFragment {
         List<Entry> entries = new ArrayList<>();
 
         for (int i = 0; i < datas.size(); i++) {
-            //时间：202201200838
+            //时间：2022
             String time = datas.get(i).getTime();
             int timeIndex = Integer.parseInt(time.substring(time.length() - 4, time.length()));
             float finalTime = timeIndex / 100 + (float) timeIndex % 100 / 60;
@@ -419,6 +423,7 @@ public class HomeFragment extends BaseFragment {
 
             }
         }
+        //数据集接口：将数据集绑定到dataSet1中
         LineDataSet dataSet1 = new LineDataSet(entriesy, "");
 
         dataSet1.setLineWidth(0.1f);

@@ -26,6 +26,7 @@ import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -102,7 +103,12 @@ import com.yc.pedometer.utils.OxygenUtil;
 import com.yc.pedometer.utils.SPUtil;
 
 import org.greenrobot.eventbus.EventBus;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -228,6 +234,35 @@ public class MainActivity extends AppCompatActivity implements OnClickListener,
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //WebSocket连接
+        // 服务器端 WebSocket 地址
+        URI uri;
+        uri=URI.create("ws://8.130.98.47:8080/ws/42/60058");
+        // 创建客户端对象
+        WebSocketClient client = new WebSocketClient(uri) {
+            @Override
+            public void onMessage(String message) {
+                //message就是接收到的消息
+                Log.e("WebSClientService", message);
+            }
+        };
+        // 连接远程服务器
+        try {
+            client.connectBlocking();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // 发送消息
+        JSONObject json = new JSONObject();
+        try {
+            json.put("type", "100");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        client.send(json.toString());
+
+
         ButterKnife.bind(this);
         List<BaseFragment> fragmentList = new ArrayList<>();
         fragmentList.add(new HomeFragment());

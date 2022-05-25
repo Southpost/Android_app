@@ -27,10 +27,12 @@ import butterknife.OnClick;
  * author: lei
  * date: 2022/3/10
  **/
+
+//设备连接与显示
 public class DeviceFragment extends BaseFragment {
     private View rootView;
     @BindView(R.id.iv_watch_state)
-    ImageView ivWatchState;
+    ImageView ivWatchState;  //连接显示
     @BindView(R.id.tv_state)
     TextView tvState;
     @BindView(R.id.tv_battery)
@@ -46,7 +48,6 @@ public class DeviceFragment extends BaseFragment {
         initView();
         return rootView;
     }
-
 
     private void initView() {
         rootView.findViewById(R.id.iv_back).setVisibility(View.GONE);
